@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <script>
+            function myFunction() {
+                document.getElementById("end").innerHTML = "End page: {{ popular_page }}";
+            }
+        </script>
+    </head>
+    <body>
+        <p>Start page: <a href="https://enwp.org?curid={{ random_id }}">{{ random_page }}</a></p>
+        <p>then get to</p>
+        <p id="end"></p>
+        <button id="button" onclick="myFunction(); this.style.display = 'none';">Click to see the End page</button>
+    </body>
+</html>
+
